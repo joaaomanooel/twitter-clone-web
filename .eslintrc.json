@@ -6,6 +6,7 @@
     "jsx-a11y"
   ],
   "rules": {
+    "no-underscore-dangle": 0,
     "import/no-named-as-default": 1,
     "import/no-named-as-default-member": 1,
     "class-methods-use-this": 1,
@@ -15,7 +16,8 @@
     "react/no-unused-state": 0,
     "no-alert": 0,
     "react/destructuring-assignment": 0,
-    "react/button-has-type": 0
+    "react/button-has-type": 0,
+    "react/prop-types": 0
   },
   "globals": {
     "document": true,
