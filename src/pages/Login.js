@@ -35,10 +35,7 @@ class Login extends Component {
             placeholder="Nome de Usuário"
             onChange={e => this.handleInputChange(e)}
           />
-          <button
-            type="submit"
-            onClick={() => alert(this.state.username)}
-          >
+          <button type="submit">
             Entrar
           </button>
         </form>
