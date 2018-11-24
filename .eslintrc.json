@@ -17,7 +17,8 @@
     "no-alert": 0,
     "react/destructuring-assignment": 0,
     "react/button-has-type": 0,
-    "react/prop-types": 0
+    "react/prop-types": 0,
+    "react/no-access-state-in-setstate": 1
   },
   "globals": {
     "document": true,

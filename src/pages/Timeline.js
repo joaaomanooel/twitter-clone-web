@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
+import socket from 'socket.io-client';
 import Tweet from '../components/Tweet';
 import api from '../services/api';
 import TwitterLogo from '../twitter.svg';
 import './Timeline.css';
 
-
-class Timeline extends Component {
+export default class Timeline extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,9 +15,25 @@ class Timeline extends Component {
   }
 
   async componentDidMount() {
-    const response = await api.get('tweets');
+    this.subscribeToEnvents();
 
+    const response = await api.get('tweets');
     this.setState({ tweets: response.data });
+  }
+
+  subscribeToEnvents() {
+    const io = socket('localhost:3000');
+    io.on('tweet', (data) => {
+      this.setState({ tweets: [data, ...this.state.tweets] });
+    });
+
+    io.on('like', (data) => {
+      this.setState({
+        tweets: this.state.tweets.map(
+          tweet => (tweet._id === data._id ? data : tweet),
+        ),
+      });
+    });
   }
 
   handleInputChange(e) {
@@ -55,5 +71,3 @@ class Timeline extends Component {
     );
   }
 }
-
-export default Timeline;
