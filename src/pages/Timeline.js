@@ -22,7 +22,7 @@ export default class Timeline extends Component {
   }
 
   subscribeToEnvents() {
-    const io = socket('localhost:3000');
+    const io = socket('https://twitter-clone-backend.herokuapp.com');
     io.on('tweet', (data) => {
       this.setState({ tweets: [data, ...this.state.tweets] });
     });
