@@ -11,7 +11,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-| ![João Manoel Neto](https://avatars2.githubusercontent.com/u/17843076?v=3&s=150)|
+| ![João Manoel Neto](https://avatars2.githubusercontent.com/u/17843076?v=4&s=150)|
 |:---------------------:|
 |  [João Manoel Neto](https://github.com/joaaomanooel/)   |
 
