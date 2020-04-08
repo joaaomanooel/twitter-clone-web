@@ -12,7 +12,7 @@
     "babel-plugin-named-asset-import": "^0.2.3",
     "babel-preset-react-app": "^6.1.0",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
-    "css-loader": "1.0.0",
+    "css-loader": "3.5.1",
     "eslint": "^5.9.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-react-app": "^3.0.5",
