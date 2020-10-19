@@ -25,7 +25,7 @@
     "fork-ts-checker-webpack-plugin-alt": "0.4.14",
     "html-webpack-plugin": "4.0.0-alpha.2",
     "husky": "^1.1.4",
-    "jest": "23.6.0",
+    "jest": "26.6.0",
     "jest-pnp-resolver": "1.0.1",
     "jest-resolve": "23.6.0",
     "mini-css-extract-plugin": "0.4.3",
